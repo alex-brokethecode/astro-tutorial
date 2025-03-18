@@ -27,3 +27,24 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Tailwind
+
+To add Tailwind, follow the steps from the [documentation](https://docs.astro.build/en/guides/styling/#tailwind)
+Additionally, guide with [Tailwind docs](https://tailwindcss.com/plus/ui-blocks/documentation)
+
+```bash
+npx astro add tailwind
+```
+
+Import it in your files
+
+```html
+---
+import "../styles/global.css";
+---
+```
+
+## Icons
+
+Use SVG icons from [tabler icons](https://tabler.io/icons)

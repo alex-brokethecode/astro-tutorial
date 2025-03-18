@@ -1,0 +1,76 @@
+---
+import HeaderButton from "./HeaderButton.astro";
+
+console.log("Header");
+---
+
+<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+  <div class="mx-auto text-center mb-8 lg:mb-16">
+    <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
+      Astro Basics
+    </h2>
+    <p class="font-light text-gray-600 sm:text-xl dark:text-gray-400">
+      Basic concepts about Astro
+    </p>
+  </div>
+
+  <nav
+    class="flex flex-col items-center justify-between w-full text-center md:flex-row"
+  >
+    <HeaderButton class="text-white" href="/">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-home"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M5 12l-2 0l9 -9l9 9l-2 0"></path><path
+          d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path><path
+          d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path></svg
+      >
+      Home
+    </HeaderButton>
+    <HeaderButton class="text-white" href="/about">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-id"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z"
+        ></path><path d="M9 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path
+          d="M15 8l2 0"></path><path d="M15 12l2 0"></path><path d="M7 16l10 0"
+        ></path></svg
+      >
+      About
+    </HeaderButton>
+    <HeaderButton class="text-white" href="/contact">
+      <svg
+        slot="before"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-phone-plus"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+        ></path><path d="M15 6h6m-3 -3v6"></path></svg
+      >
+      Contact</HeaderButton
+    >
+  </nav>
+</header>
