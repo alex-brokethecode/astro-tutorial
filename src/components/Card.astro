@@ -1,0 +1,20 @@
+---
+const { id, name, email, website } = Astro.props;
+const hasWebsite = website.includes("org") ? true : false;
+---
+
+<a href={id}>
+  <h2>{name}</h2>
+  <p>{email}</p>
+  <p
+    class:list={[
+      "text-xs font-semibold mr-2 px-2.5 py-0.5 rounded",
+      {
+        "bg-green-400 text-green-900": hasWebsite,
+        "bg-blue-400 text-blue-900": !hasWebsite,
+      },
+    ]}
+  >
+    {website}
+  </p>
+</a>

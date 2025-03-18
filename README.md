@@ -48,3 +48,7 @@ import "../styles/global.css";
 ## Icons
 
 Use SVG icons from [tabler icons](https://tabler.io/icons)
+
+## Typing
+
+Use [QuickType](https://app.quicktype.io/) to generate your interfaces in TypeScript
